@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: 0.5px;
+  font-family: cursive;
+}
+
+html {
+  background: linear-gradient(gray, white);
+  background-size: cover;
+  min-height: 100%;
+}
+
+form {
+  margin: 15px;
+  text-align: center;
+}
+
+.form-group {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1vw 0;
+  font-size: 1.5vw;
+}
+
+/* Для Chrome, Safari, Edge */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Для Firefox */
+input[type="number"] {
+  appearance: initial;
+  -moz-appearance: textfield;
+}
+
+input[type="number"] {
+  border: none;
+  width: 35dvw;
+  height: auto;
+  padding: 0.25vw 0.5vw;
+  border-radius: 0.25dvw;
+  font-size: 1.5vw;
+}
+
+input[type="number"]:focus {
+  outline: none;
+  box-shadow: 0 0 2.5px 2.5px white;
+}
+
+.form-btn {
+  all: unset;
+  cursor: pointer;
+  user-select: none;
+  font-size: 1.25vw;
+  box-shadow: 0px 0px 1px 1px white;
+  padding: 0.35vw 0.75vw;
+  border-radius: 0.25dvw;
+  margin-top: 2.5vw;
+  transition: background 0.25s ease-in-out;
+  text-transform: capitalize;
+  background: rgba(255, 255, 255, 0);
+}
+
+.form-btn:hover {
+  background-color: white;
+}
+
+.form-btn:active {
+  background-color: white;
+}
+
+#result {
+  width: 100%;
+  max-width: 100dvw;
+  margin: 0 auto;
+  padding: 2.5vw;
+  font-size: 1.5vw;
+  color: rgba(0, 0, 0, 0.75);
+  white-space: pre-line;
+  text-align: center;
+  line-height: 2;
+}
+
+#back-btn {
+  all: unset;
+  display: none;
+  margin: 0 auto;
+  cursor: pointer;
+  user-select: none;
+  font-size: 1.25vw;
+  box-shadow: 0px 0px 1px 1px white;
+  padding: 0.35vw 0.75vw;
+  border-radius: 0.25dvw;
+  margin-top: 2.5vw;
+  transition: background 0.25s ease-in-out;
+  text-transform: capitalize;
+  background: rgba(255, 255, 255, 0);
+  letter-spacing: 0.25vw;
+}
+
+#back-btn:hover {
+  background-color: white;
+}
+
+#back-btn:active {
+  background-color: white;
+}
+
+#translate {
+  display: none;
+  cursor: pointer;
+
+  width: 2.5vw;
+  height: 2.5vw;
+  position: absolute;
+  top: 2.5vw;
+  right: 2.5vw;
+  padding: 0.25vw;
+  border-radius: 0.25dvw;
+  transition: background 0.25s ease-in-out;
+}
+
+#translate:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+#translate:active {
+  background: rgba(255, 255, 255, 0.25);
+}
