@@ -10,65 +10,69 @@
   </head>
 
   <body>
-    <svg
-      id="translate"
-      xmlns="http://www.w3.org/2000/svg"
-      height="24px"
-      viewBox="0 -960 960 960"
-      width="24px"
-      fill="#1f1f1f"
-    >
-      <path
-        d="m476-80 182-480h84L924-80h-84l-43-122H603L560-80h-84ZM160-200l-56-56 202-202q-35-35-63.5-80T190-640h84q20 39 40 68t48 58q33-33 68.5-92.5T484-720H40v-80h280v-80h80v80h280v80H564q-21 72-63 148t-83 116l96 98-30 82-122-125-202 201Zm468-72h144l-72-204-72 204Z"
-      />
-    </svg>
+    <div class="main">
+      <svg
+        id="translate"
+        xmlns="http://www.w3.org/2000/svg"
+        height="24px"
+        viewBox="0 -960 960 960"
+        width="24px"
+        fill="#1f1f1f"
+      >
+        <path
+          d="m476-80 182-480h84L924-80h-84l-43-122H603L560-80h-84ZM160-200l-56-56 202-202q-35-35-63.5-80T190-640h84q20 39 40 68t48 58q33-33 68.5-92.5T484-720H40v-80h280v-80h80v80h280v80H564q-21 72-63 148t-83 116l96 98-30 82-122-125-202 201Zm468-72h144l-72-204-72 204Z"
+        />
+      </svg>
+      <div class="top-text">
+        <p class="title">Body Mass Index (BMI)</p>
 
-    <p class="title">Body Mass Index (BMI)</p>
-
-    <p class="subtitle">
-      A calculated value that shows the ratio of weight to height and helps
-      assess whether body weight is within the normal range.
-    </p>
-
-    <form>
-      <div class="form-group">
-        <p class="form-item">
-          <label class="label-h" for="height">Height (cm)</label>
-          <input
-            type="number"
-            name="height"
-            id="height"
-            required
-            min="1"
-            max="500"
-          />
-        </p>
-
-        <p class="form-item">
-          <label class="label-w" for="weight">Weight (kg)</label>
-          <input
-            type="number"
-            name="weight"
-            id="weight"
-            required
-            min="1"
-            max="500"
-          />
+        <p class="subtitle">
+          A calculated value that shows the ratio of weight to height and helps
+          assess whether body weight is within the normal range.
         </p>
       </div>
 
-      <button class="form-btn" type="submit">Calculate</button>
-    </form>
+      <form class="form" method="post">
+        <fieldset class="form-group">
+          <div class="form-item">
+            <label class="label-h" for="height">Height (cm)</label>
+            <input
+              class="input"
+              type="number"
+              name="height"
+              id="height"
+              required
+              min="1"
+              max="500"
+            />
+          </div>
 
-    <div id="result"></div>
+          <div class="form-item">
+            <label class="label-w" for="weight">Weight (kg)</label>
+            <input
+              class="input"
+              type="number"
+              name="weight"
+              id="weight"
+              required
+              min="1"
+              max="500"
+            />
+          </div>
+        </fieldset>
 
-    <button id="back-btn" hidden>back</button>
+        <button class="form-btn" type="submit">Calculate</button>
+      </form>
 
-    <p class="annotation">
-      This calculator does not replace medical advice. For personalized
-      recommendations, please consult a healthcare professional.
-    </p>
+      <div id="result"></div>
 
+      <button id="back-btn" hidden>Back</button>
+
+      <p class="annotation">
+        This calculator does not replace medical advice. For personalized
+        recommendations, please consult a healthcare professional.
+      </p>
+    </div>
     <script src="js/script.js"></script>
   </body>
 </html>

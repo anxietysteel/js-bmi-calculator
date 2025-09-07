@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: sans-serif;
+  font-size: 0.85rem;
+}
+
+html {
+  font-size: 16px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+.main {
+  padding: 0.5rem;
+}
+
+.top-text {
+  text-align: center;
+}
+
+.title {
+  font-size: 1.25rem;
+}
+
+.subtitle {
+  text-align: left;
+  margin-top: 0.5rem;
+}
+
+#translate {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+}
+
+.form {
+  margin-top: 0.5rem;
+}
+
+.form-group {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem 0;
+}
+
+.form-item {
+  display: flex;
+}
+
+.input {
+  width: 100%;
+}
+
+.form-btn {
+  margin-top: 0.5rem;
+}
+
+#result {
+  margin-top: 0.5rem;
+  white-space: pre-line;
+}
+
+#back-btn {
+  margin-top: 0.5rem;
+}
+
+.annotation {
+  margin-top: 0.5rem;
+}

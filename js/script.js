@@ -60,22 +60,22 @@ bmiForm.addEventListener("submit", (event) => {
   if (bmi < 18.5) {
     category = "underweight";
     result.textContent =
-      `${translations[currentLang].userBmi} = ${bmi.toFixed(1)}\n\n` +
+      `${translations[currentLang].userBmi} = ${bmi.toFixed(1)}\n` +
       translations[currentLang].underweight;
   } else if (bmi >= 18.5 && bmi <= 24.9) {
     category = "normal";
     result.textContent =
-      `${translations[currentLang].userBmi} = ${bmi.toFixed(1)}\n\n` +
+      `${translations[currentLang].userBmi} = ${bmi.toFixed(1)}\n` +
       translations[currentLang].normal;
   } else if (bmi >= 25 && bmi <= 29.9) {
     category = "overweight";
     result.textContent =
-      `${translations[currentLang].userBmi} = ${bmi.toFixed(1)}\n\n` +
+      `${translations[currentLang].userBmi} = ${bmi.toFixed(1)}\n` +
       translations[currentLang].overweight;
   } else if (bmi >= 30) {
     category = "obesity";
     result.textContent =
-      `${translations[currentLang].userBmi} = ${bmi.toFixed(1)}\n\n` +
+      `${translations[currentLang].userBmi} = ${bmi.toFixed(1)}\n` +
       translations[currentLang].obesity;
   }
 
@@ -87,19 +87,19 @@ bmiForm.addEventListener("submit", (event) => {
 function toggleLang() {
   if (category == "underweight") {
     result.textContent =
-      `${translations[currentLang].userBmi} = ${BMI}\n\n` +
+      `${translations[currentLang].userBmi} = ${BMI}\n` +
       translations[currentLang].underweight;
   } else if (category == "normal") {
     result.textContent =
-      `${translations[currentLang].userBmi} = ${BMI}\n\n` +
+      `${translations[currentLang].userBmi} = ${BMI}\n` +
       translations[currentLang].normal;
   } else if (category == "overweight") {
     result.textContent =
-      `${translations[currentLang].userBmi} = ${BMI}\n\n` +
+      `${translations[currentLang].userBmi} = ${BMI}\n` +
       translations[currentLang].overweight;
   } else if (category == "obesity") {
     result.textContent =
-      `${translations[currentLang].userBmi} = ${BMI}\n\n` +
+      `${translations[currentLang].userBmi} = ${BMI}\n` +
       translations[currentLang].obesity;
   }
 
