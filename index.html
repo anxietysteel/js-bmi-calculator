@@ -8,28 +8,32 @@
 
     <title>BMI Calculator</title>
   </head>
-  <body style="padding: 1.5vw">
-    <p style="font-size: 2vw; color: rgba(0, 0, 0, 0.75)">
-      Индекс массы тела (BMI/ИМТ)
-    </p>
 
-    <p
-      style="
-        font-size: 1.15vw;
-        margin-top: 1.5vw;
-        margin-bottom: 2.5vw;
-        color: rgba(0, 0, 0, 0.75);
-      "
+  <body>
+    <svg
+      id="translate"
+      xmlns="http://www.w3.org/2000/svg"
+      height="24px"
+      viewBox="0 -960 960 960"
+      width="24px"
+      fill="#1f1f1f"
     >
-      Расчётный показатель, который показывает соотношение веса и роста и
-      помогает оценить, находится ли масса тела в пределах нормы.
-    </p>
-    <hr />
+      <path
+        d="m476-80 182-480h84L924-80h-84l-43-122H603L560-80h-84ZM160-200l-56-56 202-202q-35-35-63.5-80T190-640h84q20 39 40 68t48 58q33-33 68.5-92.5T484-720H40v-80h280v-80h80v80h280v80H564q-21 72-63 148t-83 116l96 98-30 82-122-125-202 201Zm468-72h144l-72-204-72 204Z"
+      />
+    </svg>
 
-    <form style="margin-top: 2.5vw" action="index.html" method="post">
+    <p class="title">Body Mass Index (BMI)</p>
+
+    <p class="subtitle">
+      A calculated value that shows the ratio of weight to height and helps
+      assess whether body weight is within the normal range.
+    </p>
+
+    <form>
       <div class="form-group">
         <p class="form-item">
-          <label for="height">Height (cm)</label>
+          <label class="label-h" for="height">Height (cm)</label>
           <input
             type="number"
             name="height"
@@ -41,7 +45,7 @@
         </p>
 
         <p class="form-item">
-          <label for="weight">Weight (kg)</label>
+          <label class="label-w" for="weight">Weight (kg)</label>
           <input
             type="number"
             name="weight"
@@ -58,36 +62,11 @@
 
     <div id="result"></div>
 
-    <svg
-      id="translate"
-      xmlns="http://www.w3.org/2000/svg"
-      height="24px"
-      viewBox="0 -960 960 960"
-      width="24px"
-      fill="#1f1f1f"
-    >
-      <path
-        d="m476-80 182-480h84L924-80h-84l-43-122H603L560-80h-84ZM160-200l-56-56 202-202q-35-35-63.5-80T190-640h84q20 39 40 68t48 58q33-33 68.5-92.5T484-720H40v-80h280v-80h80v80h280v80H564q-21 72-63 148t-83 116l96 98-30 82-122-125-202 201Zm468-72h144l-72-204-72 204Z"
-      />
-    </svg>
+    <button id="back-btn" hidden>back</button>
 
-    <button id="back-btn" style="margin-bottom: 2.5vw">back</button>
-
-    <hr />
-
-    <p
-      style="
-        font-size: 1.25vw;
-        position: absolute;
-        bottom: 1.5vw;
-        left: 1.5vw;
-        color: rgba(0, 0, 0, 0.85);
-      "
-    >
+    <p class="annotation">
       This calculator does not replace medical advice. For personalized
-      recommendations, please consult a healthcare professional. <br /><br />
-      «Этот калькулятор не заменяет консультацию врача. Для индивидуальных
-      рекомендаций обратитесь к специалисту».
+      recommendations, please consult a healthcare professional.
     </p>
 
     <script src="js/script.js"></script>
