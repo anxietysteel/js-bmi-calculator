@@ -17,7 +17,7 @@ let BMI;
 
 const translations = {
   ru: {
-    userBmi: `ИМТ`,
+    userBmi: `Ваш ИМТ`,
     title: `Индекс массы тела (ИМТ)`,
     subtitle: `Расчётный показатель, который показывает соотношение веса и роста и помогает оценить, находится ли масса тела в пределах нормы.`,
     labelH: `Рост (см)`,
@@ -31,7 +31,7 @@ const translations = {
     obesity: `ИМТ больше либо равно 30 — Ожирение\nПри таких значениях могут повышаться риски для здоровья (сердечно-сосудистые заболевания, диабет и т. д.). Важно воспринимать это как повод задуматься о корректировке образа жизни и, по возможности, проконсультироваться с врачом.`,
   },
   en: {
-    userBmi: `BMI`,
+    userBmi: `Your BMI`,
     title: `Body Mass Index (BMI)`,
     subtitle: `A calculated value that shows the ratio of weight to height and helps assess whether body weight is within the normal range.`,
     labelH: `Height (cm)`,
