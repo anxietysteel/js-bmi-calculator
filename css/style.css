@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 
-  font-family: sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 1rem;
 }
 
@@ -35,7 +35,6 @@ input[type="number"] {
 }
 
 .wrapper {
-  /* padding: 0.5rem; */
   display: flex;
   flex-direction: column;
   min-height: 100dvh;
@@ -57,7 +56,17 @@ input[type="number"] {
 }
 
 .title {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+#translate {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  background-color: rgba(0, 0, 255, 0.05);
+  padding: 0.25rem;
 }
 
 .subtitle {
@@ -65,14 +74,9 @@ input[type="number"] {
   margin-top: 0.5rem;
 }
 
-#translate {
-  width: 1.5rem;
-  height: 1.5rem;
-  cursor: pointer;
-}
-
-.form {
-  margin-top: 0.5rem;
+.line {
+  margin: 0.5rem 0;
+  border-style: solid;
 }
 
 .form-group {
@@ -84,17 +88,27 @@ input[type="number"] {
 
 .form-item {
   display: flex;
+  align-items: center;
+}
+
+.label-h,
+.label-w {
+  font-weight: 600;
+  flex: 1;
 }
 
 .input {
   width: 100%;
   padding: 0 0.5rem;
+  flex: 2;
 }
 
 .form-btn {
   margin-top: 0.5rem;
   padding: 0.25rem;
   width: 100%;
+  font-weight: 600;
+  cursor: pointer;
 }
 
 #result {
@@ -103,9 +117,18 @@ input[type="number"] {
   text-align: justify;
 }
 
+.user-bmi {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
 #back-btn {
   padding: 0.25rem;
   width: 100%;
+  font-weight: 600;
+  cursor: pointer;
 }
 
 .footer {
@@ -113,9 +136,123 @@ input[type="number"] {
   background-color: rgba(0, 0, 0, 0.1);
   padding: 0.5rem;
 }
-/* 
-@media (max-width: 360px) {
-  html {
-    width: 360px;
+
+.annotation {
+  font-weight: 600;
+}
+
+/* ≥ 425px — крупные телефоны */
+@media (min-width: 425px) {
+  * {
+    font-size: 1.25rem;
   }
-} */
+
+  .main {
+    padding: 1rem 1rem 0 1rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .subtitle {
+    margin-top: 1rem;
+  }
+
+  .line {
+    margin: 1rem 0;
+  }
+
+  .form-group {
+    gap: 1rem 0;
+  }
+
+  .input {
+    padding: 0.75rem;
+  }
+
+  .form-btn {
+    margin-top: 1rem;
+    padding: 0.5rem;
+  }
+
+  .user-bmi {
+    font-size: 1.25rem;
+  }
+
+  #result {
+    margin: 1.25rem 0;
+  }
+
+  .footer {
+    margin-top: 1rem;
+    padding: 1rem;
+  }
+}
+
+/* ≥ 768px — планшеты (iPad Mini, вертикальный планшет) */
+@media (min-width: 768px) {
+  * {
+    font-size: 1.5rem;
+  }
+
+  body {
+    background-image: url("../images/bgH.jpg");
+  }
+
+  .main {
+    padding: 1.5rem 1.5rem 0 1.5rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    margin-top: 1.5rem;
+  }
+
+  #translate {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 0.25rem;
+    padding: 0.25rem;
+  }
+
+  .line {
+    margin: 1.5rem 0;
+  }
+
+  .form-group {
+    border: none;
+    display: flex;
+    flex-direction: row;
+    gap: 0 1rem;
+  }
+
+  .form-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    gap: 1rem 0;
+  }
+
+  .form-btn {
+    margin-top: 1.5rem;
+    padding: 0.75rem;
+  }
+
+  .user-bmi {
+    font-size: 1.75rem;
+  }
+
+  #result {
+    margin: 1.75rem 0;
+  }
+
+  .footer {
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+  }
+}
