@@ -141,7 +141,6 @@ input[type="number"] {
   font-weight: 600;
 }
 
-/* ≥ 425px — крупные телефоны */
 @media (min-width: 425px) {
   * {
     font-size: 1.25rem;
@@ -184,13 +183,16 @@ input[type="number"] {
     margin: 1.25rem 0;
   }
 
+  #back-btn {
+    padding: 0.5rem;
+  }
+
   .footer {
     margin-top: 1rem;
     padding: 1rem;
   }
 }
 
-/* ≥ 768px — планшеты (iPad Mini, вертикальный планшет) */
 @media (min-width: 768px) {
   * {
     font-size: 1.5rem;
@@ -249,6 +251,10 @@ input[type="number"] {
 
   #result {
     margin: 1.75rem 0;
+  }
+
+  .back-btn {
+    padding: 0.75rem;
   }
 
   .footer {
