@@ -60,23 +60,27 @@ bmiForm.addEventListener("submit", (event) => {
   if (bmi < 18.5) {
     category = "underweight";
     result.innerHTML =
-      `<p class="user-bmi">${translations[currentLang].userBmi} = ${bmi.toFixed(1)}</p>` +
-      translations[currentLang].underweight;
+      `<p class="user-bmi">${translations[currentLang].userBmi} = ${bmi.toFixed(
+        1
+      )}</p>` + translations[currentLang].underweight;
   } else if (bmi >= 18.5 && bmi <= 24.9) {
     category = "normal";
     result.innerHTML =
-      `<p class="user-bmi">${translations[currentLang].userBmi} = ${bmi.toFixed(1)}</p>` +
-      translations[currentLang].normal;
+      `<p class="user-bmi">${translations[currentLang].userBmi} = ${bmi.toFixed(
+        1
+      )}</p>` + translations[currentLang].normal;
   } else if (bmi >= 25 && bmi <= 29.9) {
     category = "overweight";
     result.innerHTML =
-      `<p class="user-bmi">${translations[currentLang].userBmi} = ${bmi.toFixed(1)}</p>` +
-      translations[currentLang].overweight;
+      `<p class="user-bmi">${translations[currentLang].userBmi} = ${bmi.toFixed(
+        1
+      )}</p>` + translations[currentLang].overweight;
   } else if (bmi >= 30) {
     category = "obesity";
     result.innerHTML =
-      `<p class="user-bmi">${translations[currentLang].userBmi} = ${bmi.toFixed(1)}</p>` +
-      translations[currentLang].obesity;
+      `<p class="user-bmi">${translations[currentLang].userBmi} = ${bmi.toFixed(
+        1
+      )}</p>` + translations[currentLang].obesity;
   }
 
   bmiForm.reset();
@@ -85,19 +89,19 @@ bmiForm.addEventListener("submit", (event) => {
 });
 
 function toggleLang() {
-  if (category == "underweight" && !result.textContent == '') {
+  if (category == "underweight" && !result.textContent == "") {
     result.innerHTML =
       `<p class="user-bmi">${translations[currentLang].userBmi} = ${BMI}</p>` +
       translations[currentLang].underweight;
-  } else if (category == "normal" && !result.textContent == '') {
+  } else if (category == "normal" && !result.textContent == "") {
     result.innerHTML =
       `<p class="user-bmi">${translations[currentLang].userBmi} = ${BMI}</p>` +
       translations[currentLang].normal;
-  } else if (category == "overweight" && !result.textContent == '') {
+  } else if (category == "overweight" && !result.textContent == "") {
     result.innerHTML =
       `<p class="user-bmi">${translations[currentLang].userBmi} = ${BMI}</p>` +
       translations[currentLang].overweight;
-  } else if (category == "obesity" && !result.textContent == '') {
+  } else if (category == "obesity" && !result.textContent == "") {
     result.innerHTML =
       `<p class="user-bmi">${translations[currentLang].userBmi} = ${BMI}</p>` +
       translations[currentLang].obesity;
