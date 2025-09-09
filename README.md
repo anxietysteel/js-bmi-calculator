@@ -14,7 +14,7 @@ It calculates BMI based on height and weight and provides interpretation (underw
 ---
 
 ## 📸 Screenshots
-| Desktop | Mobile |
+| Mobile | Desktop |
 |---------|--------|
 | ![Mobile](./screenshots/screen1.jpg) | ![Desktop](./screenshots/screen2.jpg) |
 
