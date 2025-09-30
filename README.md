@@ -30,7 +30,7 @@ It calculates BMI based on height and weight and provides interpretation (underw
 ## 📦 Installation & Usage
 1. Clone the repository:
    ```bash
-   git clone https://github.com/lsteelanxietyl/bmi-calculator.git
+   git clone https://github.com/anxietysteel/js-bmi-calculator.git
 
 2. Open index.html in your browser.
 (No additional setup required)
